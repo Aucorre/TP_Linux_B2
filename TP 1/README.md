@@ -13,7 +13,6 @@ Au menu :
 - gestion de partitions
 - gestion de services
 
-![Heyyyy](./pics/hey.jpeg)
 
 ## Sommaire
 
