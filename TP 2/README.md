@@ -464,7 +464,6 @@ MariaDB [(none)]> SELECT user FROM mysql.user;
 4 rows in set (0.001 sec)
 ```
 
-> Les utilisateurs de la base de données sont différents des utilisateurs du système Rocky Linux qui porte la base. Les utilisateurs de la base définissent des identifiants utilisés pour se connecter à la base afin d'y voir ou d'y modifier des données.
 
 Une fois qu'on s'est assurés qu'on peut se co au service de base de données depuis `web.tp2.linux`, on peut continuer.
 

@@ -13,7 +13,6 @@ Au menu :
 - gestion de partitions
 - gestion de services
 
-
 ## Sommaire
 
 - [TP1 : (re)Familiaration avec un système GNU/Linux](#tp1--refamiliaration-avec-un-système-gnulinux)
