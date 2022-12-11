@@ -16,6 +16,12 @@ sudo systemctl start nginx
 sudo firewall-cmd --add-port=443/tcp --permanent
 ```
 
+Création du certificat ssl avec clé.
+
+```bash
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/pki/tls/private/tachidesk.key -out /etc/pki/tls/certs/tachidesk.crt
+```
+
 On va ensuite créer un fichier de configuration pour notre reverse proxy.
 
 ```bash
@@ -38,7 +44,7 @@ server {
         proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
 
         # On définit la cible du proxying
-        proxy_pass http://10.104.1.13;
+        proxy_pass http://10.104.1.13:4567;
     }
 
     # Deux sections location recommandés par la doc NextCloud
