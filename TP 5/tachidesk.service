@@ -2,7 +2,7 @@
 Description=Very simple tachidesk app
 
 [Service]
-ExecStart=sudo /usr/bin/docker run -d --name tachidesk -p 4567:4567 ghcr.io/suwayomi/tachidesk
+ExecStart=sudo /usr/bin/docker run -d --name tachidesk  -v /home/audy/Tachidesk:/home/suwayomi/.local/share/Tachidesk -p 4567:4567 ghcr.io/suwayomi/tachidesk
 
 [Install]
 WantedBy=multi-user.target
